@@ -27,7 +27,7 @@ export default class TrendingPageComponent {
     const isAtBottom = scrollTop + clientHeight + 300 >= scrollHeight;
 
     if(isAtBottom) {
-      // TODO: cargar la siguiente página de gifs
+      this.gifService.loadTrendingGifs();
     }
   }
 }
