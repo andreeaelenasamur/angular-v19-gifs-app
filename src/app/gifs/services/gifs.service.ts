@@ -27,7 +27,6 @@ export class GifService {
       groups.push( this.trendingGifs().slice(i, i + 3) );
     }
 
-    console.log(groups);
     return groups;
   });
 
